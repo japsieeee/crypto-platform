@@ -83,7 +83,7 @@ export default function Dashboard() {
       <label className="sr-only">TRENDING</label>
       <div className="px-7 mt-10">
         <h3 className="text-sub-2 text-[16px] italic mb-4">
-          Today's prices by marketcap
+          {`Today's prices by marketcap`}
         </h3>
 
         <div className="grid lg:grid-cols-2 gap-x-5 gap-y-5 lg:gap-y-0">
@@ -108,7 +108,7 @@ export default function Dashboard() {
         <div className="snap-x snap-mandatory scrollbar-rounded-lg scrollbar-thin p-2 relative flex min-h-[318px] overflow-y-hidden">
           <div className="flex absolute top-0 left-0 gap-5">
             {listCoins.map((li, index: number) => (
-              <Coins {...li} index={index} />
+              <Coins {...li} key={index} />
             ))}
           </div>
         </div>

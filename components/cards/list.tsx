@@ -25,7 +25,7 @@ export const ListCard: React.FC<IListCard> = ({
     <div className="p-3 rounded-[34px] bg-sidebar w-full">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center">
-          <Image src={icon} width={40} height={40} />
+          <Image src={icon} width={40} height={40} alt="avatar" />
           <h1>{title}</h1>
         </div>
         <button className="text-[14px] text-green-2">See all</button>
@@ -37,7 +37,7 @@ export const ListCard: React.FC<IListCard> = ({
         >
           <div className="flex items-center text-[16px]">
             <span className="mr-3">{index + 1} </span>
-            <Image src={li.icon} width={20} height={20} />
+            <Image src={li.icon} width={20} height={20} alt="list-icon" />
             <span className="ml-3"> {li.name}</span>
             <span className="ml-1 text-[12px] text-sub-2"> {li.currency}</span>
           </div>

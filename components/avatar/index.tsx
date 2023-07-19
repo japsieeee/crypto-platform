@@ -10,6 +10,7 @@ export const Avatar = () => {
         width={35}
         height={35}
         className="rounded-full"
+        alt="avatar"
       />
       <h3 className="mx-2">Alexim</h3>
       <GoChevronDown />

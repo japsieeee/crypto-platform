@@ -10,9 +10,15 @@ export const Sidebar = () => {
     <aside className="min-w-[256px] sticky top-0 h-screen text-white bg-sidebar px-5 py-6 hidden lg:flex flex-col justify-between overflow-y-auto scrollbar-thin scrollbar-thumb-gray-100">
       <div id="upper">
         <div id="logo-group" className="flex items-center mb-20">
-          <Image src="/logo.svg" width={34} height={34} />
+          <Image src="/logo.svg" width={34} height={34} alt="logo" />
           <span className="mr-2" />
-          <Image src="/logo-name.svg" layout="fixed" width={102} height={20} />
+          <Image
+            src="/logo-name.svg"
+            layout="fixed"
+            width={102}
+            height={20}
+            alt="logo-name"
+          />
         </div>
 
         {links.map((link, index: number) => (
@@ -23,7 +29,12 @@ export const Sidebar = () => {
       <div id="lower">
         <button className="capitalize flex items-center my-1 relative p-1 rounded-full">
           <div className="rounded-full mr-2 leading-none p-2">
-            <Image src="/icons/logout-icon.svg" width={24} height={20} />
+            <Image
+              src="/icons/logout-icon.svg"
+              width={24}
+              height={20}
+              alt="logout-icon"
+            />
           </div>
           <span className="text-[16px]">Logout</span>
         </button>
@@ -49,7 +60,7 @@ const MyLink: React.FC<ILink> = ({ icon, name, path }) => {
           isActive ? "bg-main-1" : "bg-transparent"
         }`}
       >
-        <Image src={icon} width={24} height={20} />
+        <Image src={icon} width={24} height={20} alt="link-icon" />
       </div>
       <span className="text-[16px]">{name}</span>
     </Link>

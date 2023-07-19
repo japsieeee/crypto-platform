@@ -84,7 +84,7 @@ const HistoryList: React.FC<IHistoryList> = ({
 }) => {
   return (
     <div className="flex items-start my-2">
-      <Image src={icon} width={52} height={52} />
+      <Image src={icon} width={52} height={52} alt="history-icon" />
       <div className="w-full flex items-start justify-between px-2">
         <div className="flex flex-col">
           <h2 className="text-[22px]">

@@ -28,6 +28,7 @@ export const Header: React.FC<IHeader> = ({ name }) => {
               width={22}
               height={20}
               className="leading-none"
+              alt="search-icon"
             />
           </div>
         </div>
