@@ -20,12 +20,13 @@ export const Coins: React.FC<ICoins> = ({ name, value, rate, icon, index }) => {
           index === 0 ? "/images/compound-bg.png" : "/images/shibalnu-bg.png"
         }
         layout="fill"
+        alt="background"
       />
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="w-full h-full p-5 flex flex-col justify-between">
           <div>
             <div className="flex items-start justify-between">
-              <Image src={icon} width={40} height={40} />
+              <Image src={icon} width={40} height={40} alt="coin-icon" />
               <button className="cursor-pointer">
                 <IoIosResize color={index === 0 ? "black" : "white"} />
               </button>
