@@ -17,6 +17,7 @@ export const PortfolioHeader = () => {
     "profit/loss",
     "actions",
   ];
+
   const data = [
     {
       icon: "/icons/tether-icon.svg",
