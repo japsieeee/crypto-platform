@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 
 export const Sidebar = () => {
   return (
-    <aside className="min-w-[256px] sticky top-0 h-screen text-white bg-sidebar px-5 py-6 hidden lg:flex flex-col justify-between overflow-y-auto scrollbar-thin scrollbar-thumb-gray-100">
+    <aside className="min-w-[256px] sticky top-0 h-screen text-white bg-sidebar px-5 py-6 hidden md:flex flex-col justify-between overflow-y-auto scrollbar-thin scrollbar-thumb-gray-100">
       <div id="upper">
         <div id="logo-group" className="flex items-center mb-20">
           <Image src="/logo.svg" width={34} height={34} alt="logo" />
@@ -43,7 +43,7 @@ export const Sidebar = () => {
   );
 };
 
-const MyLink: React.FC<ILink> = ({ icon, name, path, disabled }) => {
+export const MyLink: React.FC<ILink> = ({ icon, name, path, disabled }) => {
   const currentPath = usePathname();
 
   const isActive = currentPath === path;
