@@ -58,8 +58,8 @@ const Academy = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 mb-10 gap-5">
-          <div className="col-span-2 w-full h-full relative">
+        <div className="grid md:grid-cols-3 mb-10 gap-5">
+          <div className="col-span-1 md:col-span-2 w-full h-full relative">
             <h1 className="text-[26px] mb-4">Live now</h1>
             <div className="w-full min-h-[426px] relative rounded-[24px] overflow-hidden">
               <label htmlFor="Profile" className="sr-only">
@@ -96,7 +96,7 @@ const Academy = () => {
               />
             </div>
           </div>
-          <div className="col-span-1 max-w-[358px] w-full h-full bg-green-2 rounded-[24px]">
+          <div className="col-span-1 max-w-[358px] w-full h-full min-h-[480px] bg-green-2 rounded-[24px]">
             <div className="flex justify-center items-center w-full h-full relative overflow-hidden">
               <div className="w-full h-[334px] absolute z-20 top-[-80px] left-0">
                 <Image src="/icons/vector.svg" layout="fill" alt="vector" />
