@@ -43,12 +43,21 @@ export const Sidebar = () => {
   );
 };
 
-const MyLink: React.FC<ILink> = ({ icon, name, path }) => {
+const MyLink: React.FC<ILink> = ({ icon, name, path, disabled }) => {
   const currentPath = usePathname();
 
   const isActive = currentPath === path;
 
-  return (
+  return disabled ? (
+    <span
+      className={`capitalize flex items-center opacity-50 cursor-default my-1 relative p-1 rounded-full`}
+    >
+      <div className={`rounded-full mr-2 leading-none p-2`}>
+        <Image src={icon} width={24} height={20} alt="link-icon" />
+      </div>
+      <span className="text-[16px]">{name}</span>
+    </span>
+  ) : (
     <Link
       href={path}
       className={`capitalize flex items-center my-1 relative p-1 rounded-full ${
