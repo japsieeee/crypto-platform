@@ -88,7 +88,14 @@ const HistoryList: React.FC<IHistoryList> = ({
       <div className="w-full flex items-start justify-between px-2">
         <div className="flex flex-col">
           <h2 className="text-[22px]">
-            {name} <span className="text-[12px]">{rate}</span>
+            {name}{" "}
+            <span
+              className={`text-[12px] ${
+                rate.includes("+") ? "text-green-1" : "text-red-1"
+              }`}
+            >
+              {rate}
+            </span>
           </h2>
           <p className="text-[14px] text-sub-2">{details}</p>
         </div>
